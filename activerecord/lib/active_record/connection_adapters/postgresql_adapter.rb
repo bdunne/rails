@@ -445,6 +445,7 @@ module ActiveRecord
         true
       end
 
+      @@auto_connect = false
       def auto_connect
         @@auto_connect.is_a?(FalseClass) ? false : true
       end
